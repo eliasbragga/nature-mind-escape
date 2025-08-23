@@ -74,8 +74,9 @@ export const AboutSection = () => {
                Isso me permitiu ampliar a minha visão e a minha prática terapêutica, reconhecendo o sujeito em sua subjetividade e complexidade.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Essa conexão com a natureza e a diversidade cultural me permite oferecer um atendimento mais completo, 
-                integrando ciência, sociedade, cultura, psicologia e pessoas. Uma visão macro no mundo geral e micro do mundo pessoal, que tem como objetivo acolher e transformar.
+               Minha conexão com a natureza e com a diversidade cultural me permite oferecer um atendimento mais completo, 
+               que integra ciência, sociedade, cultura, psicologia e, acima de tudo, pessoas. Com uma visão macro do mundo e micro do universo pessoal, 
+               meu propósito é acolher, compreender e transformar.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
