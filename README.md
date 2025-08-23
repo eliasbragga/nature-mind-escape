@@ -30,9 +30,7 @@ O design foi pensado para transmitir **calma, acolhimento e profissionalismo**, 
 ---
 
 
-## What technologies are used for this project?
-
-This project is built with:
+## Quais tecnologias utilizei:
 
 - Vite
 - TypeScript
