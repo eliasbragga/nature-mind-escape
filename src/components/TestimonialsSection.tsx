@@ -65,10 +65,6 @@ export const TestimonialsSection = () => {
                 
                 <div className="border-t border-border/50 pt-4">
                   <div className="flex justify-between items-start">
-                    <div>
-                      <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
-                      <p className="text-sm text-muted-foreground">{testimonial.age}</p>
-                    </div>
                     <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
                       {testimonial.issue}
                     </span>
