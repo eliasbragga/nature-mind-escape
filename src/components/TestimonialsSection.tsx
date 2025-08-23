@@ -4,13 +4,6 @@ import { Star, Quote } from "lucide-react";
 export const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Ana Carolina",
-      age: "28 anos",
-      text: "A Dra. Maria transformou minha vida. Sua abordagem acolhedora e as técnicas que ela me ensinou me ajudaram a superar a ansiedade e encontrar paz interior.",
-      rating: 5,
-      issue: "Ansiedade"
-    },
-    {
       name: "João Pedro",
       age: "35 anos", 
       text: "Procurei ajuda durante um momento difícil no meu casamento. As sessões me deram clareza e ferramentas para melhorar minha comunicação e relacionamento.",
@@ -20,31 +13,24 @@ export const TestimonialsSection = () => {
     {
       name: "Mariana Santos",
       age: "42 anos",
-      text: "Depois de anos lutando contra a depressão, finalmente encontrei esperança. O tratamento com a Dra. Maria me devolveu a alegria de viver.",
+      text: "Depois de anos lutando contra a depressão, finalmente encontrei esperança. O tratamento com a Dra. Arieli me devolveu a alegria de viver.",
       rating: 5,
       issue: "Depressão"
     },
     {
       name: "Carlos Eduardo",
       age: "29 anos",
-      text: "O burnout estava acabando comigo. Graças ao acompanhamento especializado, consegui recuperar meu equilíbrio e redescobrir minha paixão pelo trabalho.",
+      text: "O burnout estava acabando comigo. Graças ao acompanhamento especializado, consegui recuperar meu equilíbrio.",
       rating: 5,
       issue: "Burnout"
     },
     {
       name: "Lucia Fernandes",
       age: "38 anos",
-      text: "As sessões online foram perfeitas para minha rotina. A Dra. Maria consegue criar um ambiente acolhedor mesmo à distância.",
+      text: "As sessões online foram perfeitas para minha rotina. A Dra. Arieli consegue criar um ambiente acolhedor mesmo à distância.",
       rating: 5,
       issue: "Autoestima"
     },
-    {
-      name: "Roberto Silva",
-      age: "45 anos",
-      text: "Nunca pensei que terapia pudesse ser tão transformadora. A conexão com a natureza que ela traz para as sessões fez toda a diferença.",
-      rating: 5,
-      issue: "Crescimento pessoal"
-    }
   ];
 
   return (
@@ -93,8 +79,8 @@ export const TestimonialsSection = () => {
           ))}
         </div>
 
-        <div className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 text-center">
-          <div className="grid md:grid-cols-4 gap-8">
+        <div className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 text-center" >
+          <div className="grid md:grid-cols-4 gap-8" style={{display: "flex", justifyContent: "center"}}>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">98%</div>
               <div className="text-sm text-muted-foreground">Taxa de satisfação</div>
@@ -102,10 +88,6 @@ export const TestimonialsSection = () => {
             <div>
               <div className="text-3xl font-bold text-primary mb-2">500+</div>
               <div className="text-sm text-muted-foreground">Pessoas atendidas</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">8</div>
-              <div className="text-sm text-muted-foreground">Anos de experiência</div>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">4.9/5</div>

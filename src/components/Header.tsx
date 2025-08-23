@@ -14,17 +14,17 @@ export const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50 shadow-soft">
+    <header className="fixed  top-0 w-full bg-background/75 backdrop-blur-sm border-b border-border z-50 shadow-soft">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="p-2 bg-gradient-nature rounded-full">
-              <Leaf className="h-6 w-6 text-primary-foreground" />
-            </div>
+            <div className="p-2 bg-primary rounded-full">
+                <Leaf className="h-6 w-6 text-primary-foreground" />
+              </div>
             <div>
               <h1 className="font-serif text-xl font-semibold text-foreground">
-                Dra. Maria Silva
+                Dra. Arieli Diniz Ferreira
               </h1>
               <p className="text-sm text-muted-foreground">Psicóloga Clínica</p>
             </div>

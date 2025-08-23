@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Heart, Users } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
-import draMaria from "@/assets/dra-maria-photo.jpg";
+import draArieli from "@/assets/arieli-psic.jpg";
 
 export const HeroSection = () => {
   return (
@@ -16,50 +16,41 @@ export const HeroSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
           <div className="text-center lg:text-left">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
               Cuidando da sua{" "}
               <span className="text-primary">saúde mental</span> com carinho
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
+            <p className="text-lg md:text-xl  mb-8 max-w-2xl text-gray-800">
               Oferecendo um espaço seguro e acolhedor para seu crescimento pessoal. 
               Terapia humanizada que respeita seu tempo e suas necessidades.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-              <Button variant="nature" size="lg" className="font-semibold px-8 py-3">
-                <Calendar className="mr-2 h-5 w-5" />
-                Agendar Consulta
-              </Button>
-              <Button variant="nature-outline" size="lg" className="font-semibold px-8 py-3">
-                Saiba Mais
-              </Button>
+              <a href="#agendamento">
+                <Button variant="nature" size="lg" className="font-semibold px-8 py-3">
+                  <Calendar className="mr-2 h-5 w-5" />
+                  Agendar Consulta
+                </Button>
+              </a>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 text-center lg:text-left">
               <div>
                 <div className="flex items-center justify-center lg:justify-start mb-2">
-                  <Heart className="h-6 w-6 text-primary mr-2" />
-                  <span className="text-2xl font-bold text-foreground">8+</span>
+                  <Users className="h-6 w-6 mr-2" />
+                  <span className="text-2xl font-bold text-foreground text-gray-800">500+</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Anos de experiência</p>
+                <p className="text-sm text-gray-800">Pessoas atendidas</p>
               </div>
               <div>
                 <div className="flex items-center justify-center lg:justify-start mb-2">
-                  <Users className="h-6 w-6 text-primary mr-2" />
-                  <span className="text-2xl font-bold text-foreground">500+</span>
+                  <Calendar className="h-6 w-6 mr-2" />
+                  <span className="text-2xl font-bold text-foreground text-gray-800">98%</span>
                 </div>
-                <p className="text-sm text-muted-foreground">Pessoas atendidas</p>
-              </div>
-              <div>
-                <div className="flex items-center justify-center lg:justify-start mb-2">
-                  <Calendar className="h-6 w-6 text-primary mr-2" />
-                  <span className="text-2xl font-bold text-foreground">98%</span>
-                </div>
-                <p className="text-sm text-muted-foreground">Satisfação</p>
+                <p className="text-sm text-gray-800">Satisfação</p>
               </div>
             </div>
           </div>
@@ -69,9 +60,9 @@ export const HeroSection = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-nature border-4 border-warm-cream">
                 <img 
-                  src={draMaria} 
-                  alt="Dra. Maria Silva - Psicóloga" 
-                  className="w-full h-full object-cover"
+                  src={draArieli} 
+                  alt="Dra. Arieli Diniz Ferreira - Psicóloga" 
+                  className="w-full h-full "
                 />
               </div>
               {/* Decorative elements */}

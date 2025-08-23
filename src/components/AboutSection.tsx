@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Heart, Compass, Shield } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const AboutSection = () => {
   return (
@@ -10,10 +11,18 @@ export const AboutSection = () => {
             Sobre Mim
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Sou psicóloga clínica formada pela USP com especialização em Terapia Cognitivo-Comportamental. 
-            Acredito que cada pessoa tem o potencial para crescer e se transformar, precisando apenas de um espaço 
-            seguro e acolhedor para florescer.
+            Sou psicóloga formada pelo Centro Universitário sete de 
+            setembro com especialização em psicologia clínica: ênfase em psicanálise.
+            Acredito que cada pessoa tem o potencial para crescer e se transformar, 
+            precisando apenas de um espaço seguro e acolhedor para florescer.
           </p>
+         <div className=" overflow-hidden border-primary" style={{width: "300px", height: "200px", borderRadius: "100%", margin: "20px auto 0"}}>
+                <img 
+                  src={logo} 
+                  alt="Dra. Arieli Diniz Ferreira - Psicóloga" 
+                  className="w-full h-full object-cover"
+                />
+            </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
@@ -73,14 +82,13 @@ export const AboutSection = () => {
                 Minha Paixão pela Natureza e Viagens
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Acredito que a natureza tem um poder transformador único. Em minhas viagens pelo mundo, 
-                descobri como diferentes culturas abordam o bem-estar mental, enriquecendo minha prática 
-                terapêutica com perspectivas diversas e holísticas.
+               Acredito que a natureza e a cultura tem um poder transformador único. Em minhas viagens e aventuras, descobri como diferentes 
+               culturas abordam a saúde mental e os mistérios da psiquê. Indo muito além da visão ocidental acerca dos processos de saúde, doença e cura. 
+               Isso me permitiu ampliar a minha visão e a minha prática terapêutica, reconhecendo o sujeito em sua subjetividade e complexidade.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Essa conexão com a natureza e a diversidade cultural me permite oferecer um atendimento 
-                mais completo, integrando técnicas tradicionais com abordagens inovadoras para seu 
-                crescimento pessoal.
+                Essa conexão com a natureza e a diversidade cultural me permite oferecer um atendimento mais completo, 
+                integrando ciência, sociedade, cultura, psicologia e pessoas. Uma visão macro no mundo geral e micro do mundo pessoal, que tem como objetivo acolher e transformar.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">

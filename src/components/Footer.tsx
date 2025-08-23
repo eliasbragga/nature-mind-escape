@@ -1,4 +1,4 @@
-import { Heart, Leaf, Mail, Phone, MapPin } from "lucide-react";
+import { Heart, Leaf, Mail, Phone, MapPin, Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -12,7 +12,7 @@ export const Footer = () => {
                 <Leaf className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-serif text-xl font-semibold">Dra. Maria Silva</h3>
+                <h3 className="font-serif text-xl font-semibold">Dra. Arieli Muniz</h3>
                 <p className="text-sm text-background/80">Psicóloga Clínica</p>
               </div>
             </div>
@@ -50,17 +50,22 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-primary" />
-                <span className="text-background/80">(11) 99999-9999</span>
+                <span className="text-background/80">(85) 98569-4442</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-background/80">contato@dramariasilva.com.br</span>
+                <span className="text-background/80">psiarieli@gmail.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
                 <div className="text-background/80">
-                  <p>Rua das Flores, 123 - Sala 45</p>
-                  <p>Vila Madalena - São Paulo/SP</p>
+                  <p>Fortaleza - Ceará</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <Instagram className="h-4 w-4 text-primary mt-1 flex-shrink-0" />
+                <div className="text-background/80">
+                  <p>@arielipsico</p>
                 </div>
               </div>
             </div>
@@ -71,7 +76,7 @@ export const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-background/80 text-sm">
-              © 2024 Dra. Maria Silva - Psicóloga Clínica. Todos os direitos reservados.
+              © 2024 Dra. Arieli Muniz - Psicóloga Clínica. Todos os direitos reservados.
             </div>
             <div className="flex items-center space-x-2 text-background/80 text-sm">
               <span>Feito com</span>
@@ -82,7 +87,7 @@ export const Footer = () => {
           
           <div className="mt-4 text-center">
             <p className="text-xs text-background/60">
-              CRP: 06/123456 - Psicóloga registrada no Conselho Regional de Psicologia
+              CRP: 11/19318 - Psicóloga registrada no Conselho Regional de Psicologia
             </p>
           </div>
         </div>

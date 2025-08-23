@@ -32,11 +32,6 @@ export const MethodologySection = () => {
       description: "Flexibilidade para atendimento no conforto da sua casa"
     },
     {
-      icon: MapPin,
-      title: "Consultório Presencial",
-      description: "Ambiente acolhedor em contato com a natureza"
-    },
-    {
       icon: Clock,
       title: "Horários Flexíveis",
       description: "Adaptação aos seus horários e necessidades"
@@ -92,7 +87,7 @@ export const MethodologySection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8" style={{ display: "flex", justifyContent: "center" }}>
             {services.map((service, index) => (
               <div key={index} className="text-center">
                 <div className="bg-primary/10 p-4 rounded-full w-fit mx-auto mb-4">
@@ -140,15 +135,11 @@ export const MethodologySection = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Duração:</span>
-                  <span className="font-medium text-foreground">90 minutos</span>
+                  <span className="font-medium text-foreground">50 minutos</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Modalidade:</span>
                   <span className="font-medium text-foreground">Presencial ou Online</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Valor:</span>
-                  <span className="font-medium text-primary">R$ 180,00</span>
                 </div>
               </div>
             </div>

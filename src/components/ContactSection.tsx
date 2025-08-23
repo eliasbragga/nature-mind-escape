@@ -2,23 +2,45 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Calendar, Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Send, Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import emailjs from "@emailjs/browser";
 
 export const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
+    title: "Contato via site Nature Mind Escape"
   });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  e.preventDefault();
+
+  emailjs.send(
+    "service_yr016ze",
+    "template_br5hr05",
+    formData,
+    "PMlztMfFiD0Acgen3"
+  )
+  .then(() => {
     toast.success("Mensagem enviada! Entrarei em contato em breve.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
+    setFormData({ name: "", email: "", phone: "", message: "", title: "Contato via site Nature Mind Escape" });
+  })
+  .catch(() => {
+    toast.error("Erro ao enviar mensagem. Tente novamente.");
+  });
+};
+
+  const sendToWpp = () => {
+    const numero = "85991399670";
+    const mensagem = "Olá, quero agendar uma sessão de atendimento psicológico.";
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, "_blank");
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -117,7 +139,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Telefone & WhatsApp</h4>
-                    <p className="text-muted-foreground">(11) 99999-9999</p>
+                    <p className="text-muted-foreground">(85) 98569-44429 -(85) 99139-9670 (wpp)</p>
                     <p className="text-sm text-muted-foreground">Disponível de segunda a sexta</p>
                   </div>
                 </div>
@@ -132,24 +154,8 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">E-mail</h4>
-                    <p className="text-muted-foreground">contato@dramariasilva.com.br</p>
+                    <p className="text-muted-foreground">psiarieli@gmail.com</p>
                     <p className="text-sm text-muted-foreground">Resposta em até 24h</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-soft bg-card p-6">
-              <CardContent className="p-0">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-full">
-                    <MapPin className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Consultório</h4>
-                    <p className="text-muted-foreground">Rua das Flores, 123 - Sala 45</p>
-                    <p className="text-muted-foreground">Vila Madalena - São Paulo/SP</p>
-                    <p className="text-sm text-muted-foreground">Próximo ao metrô Vila Madalena</p>
                   </div>
                 </div>
               </CardContent>
@@ -164,9 +170,8 @@ export const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Horários de Atendimento</h4>
                     <div className="space-y-1 text-sm text-muted-foreground">
-                      <p>Segunda a Quinta: 8h às 20h</p>
-                      <p>Sexta: 8h às 18h</p>
-                      <p>Sábado: 8h às 14h</p>
+                      <p>Segunda a Sábado</p>
+                      <strong>somente com hora marcada</strong>
                     </div>
                   </div>
                 </div>
@@ -177,7 +182,7 @@ export const ContactSection = () => {
 
         {/* CTA Section */}
         <div className="bg-gradient-nature rounded-2xl p-8 md:p-12 text-center text-primary-foreground">
-          <h3 className="font-serif text-2xl md:text-3xl font-bold mb-4">
+          <h3 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
             Pronto para Transformar sua Vida?
           </h3>
           <p className="text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -189,13 +194,14 @@ export const ContactSection = () => {
               variant="secondary" 
               size="lg" 
               className="font-semibold px-8 py-3"
+              onClick={sendToWpp}
             >
-              <Calendar className="mr-2 h-5 w-5" />
-              Agendar Primeira Consulta
+              <Send className="mr-2 h-5 w-5" />
+              Agendar Primeira Consulta (wpp)
             </Button>
             <Button 
-              variant="nature-outline" 
               size="lg" 
+              onClick={() => window.location.href = "tel:+5585985694442"}
               className="font-semibold px-8 py-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
             >
               <Phone className="mr-2 h-5 w-5" />
