@@ -11,9 +11,8 @@ export const AboutSection = () => {
             Sobre Mim
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Sou psicóloga formada pelo Centro Universitário sete de 
-            setembro com especialização em psicologia clínica: ênfase em psicanálise.
-            Acredito que cada pessoa tem o potencial para crescer e se transformar, 
+            Me chamo Arieli Diniz Ferreira, psicóloga clínica formada pelo Centro Universitário Sete de Setembro com especialização 
+            em psicologia clínica: ênfase em psicanálise. Acredito que cada pessoa tem potencial para crescer e se transformar, 
             precisando apenas de um espaço seguro e acolhedor para florescer.
           </p>
          <div className=" overflow-hidden border-primary" style={{width: "300px", height: "200px", borderRadius: "100%", margin: "20px auto 0"}}>

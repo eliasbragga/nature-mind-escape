@@ -35,17 +35,6 @@ export const HeroSection = () => {
                 </Button>
               </a>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 text-center lg:text-left">
-              <div>
-                <div className="flex items-center justify-center lg:justify-start mb-2">
-                  <Users className="h-6 w-6 mr-2" />
-                  <span className="text-2xl font-bold text-foreground text-gray-800">500+</span>
-                </div>
-                <p className="text-sm text-gray-800">Pessoas atendidas</p>
-              </div>
-            </div>
           </div>
 
           {/* Photo */}
