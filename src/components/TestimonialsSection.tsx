@@ -78,10 +78,6 @@ export const TestimonialsSection = () => {
         <div className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 text-center" >
           <div className="grid md:grid-cols-4 gap-8" style={{display: "flex", justifyContent: "center"}}>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">98%</div>
-              <div className="text-sm text-muted-foreground">Taxa de satisfação</div>
-            </div>
-            <div>
               <div className="text-3xl font-bold text-primary mb-2">500+</div>
               <div className="text-sm text-muted-foreground">Pessoas atendidas</div>
             </div>

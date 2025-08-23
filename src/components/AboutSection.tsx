@@ -25,7 +25,7 @@ export const AboutSection = () => {
             </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16" style={{display: "flex", justifyContent: "center"}}>
           <Card className="text-center p-6 border-0 shadow-soft bg-card/60 backdrop-blur-sm hover:shadow-nature transition-all duration-300">
             <CardContent className="p-0">
               <div className="bg-gradient-nature p-3 rounded-full w-fit mx-auto mb-4">
@@ -33,7 +33,7 @@ export const AboutSection = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">Abordagem Científica</h3>
               <p className="text-sm text-muted-foreground">
-                Métodos baseados em evidências científicas para resultados efetivos
+                psicanálise, método baseado no inconsciente e na associação livre.
               </p>
             </CardContent>
           </Card>
@@ -46,18 +46,6 @@ export const AboutSection = () => {
               <h3 className="font-semibold text-foreground mb-2">Cuidado Humanizado</h3>
               <p className="text-sm text-muted-foreground">
                 Atendimento personalizado respeitando sua individualidade
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center p-6 border-0 shadow-soft bg-card/60 backdrop-blur-sm hover:shadow-nature transition-all duration-300">
-            <CardContent className="p-0">
-              <div className="bg-gradient-nature p-3 rounded-full w-fit mx-auto mb-4">
-                <Compass className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <h3 className="font-semibold text-foreground mb-2">Orientação Clara</h3>
-              <p className="text-sm text-muted-foreground">
-                Direcionamento prático para superar desafios e alcançar objetivos
               </p>
             </CardContent>
           </Card>

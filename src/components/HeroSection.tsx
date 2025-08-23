@@ -45,13 +45,6 @@ export const HeroSection = () => {
                 </div>
                 <p className="text-sm text-gray-800">Pessoas atendidas</p>
               </div>
-              <div>
-                <div className="flex items-center justify-center lg:justify-start mb-2">
-                  <Calendar className="h-6 w-6 mr-2" />
-                  <span className="text-2xl font-bold text-foreground text-gray-800">98%</span>
-                </div>
-                <p className="text-sm text-gray-800">Satisfação</p>
-              </div>
             </div>
           </div>
 
