@@ -24,7 +24,7 @@ export const AboutSection = () => {
             </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16" style={{display: "flex", justifyContent: "center"}}>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <Card className="text-center p-6 border-0 shadow-soft bg-card/60 backdrop-blur-sm hover:shadow-nature transition-all duration-300">
             <CardContent className="p-0">
               <div className="bg-gradient-nature p-3 rounded-full w-fit mx-auto mb-4">

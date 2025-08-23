@@ -4,19 +4,15 @@ import { CheckCircle, Users, Video, MapPin, Clock } from "lucide-react";
 export const MethodologySection = () => {
   const methodologies = [
     {
-      title: "Terapia Cognitivo-Comportamental (TCC)",
-      description: "Abordagem focada na identificação e modificação de padrões de pensamento e comportamento.",
+      title: "Abordagem",
+      description: "A abordagem terapêutica é a linha teórica que o profissional segue em sua prática clínica. Aterapia psicanalítica é uma abordagem que tem como objetivo compreender o ser humano a partir da investigação de seus processos inconscientes.",
       benefits: ["Resultados práticos", "Técnicas validadas", "Foco no presente"]
     },
     {
-      title: "Terapia Humanística",
-      description: "Centrada na pessoa, promovendo autoconhecimento e crescimento pessoal.",
+      title: "A Terapia",
+      description: " Na terapia online o atendimento é feito através da plataforma google meet, por meio de vídeochamada. você receberá um link seu, nossa sessão, é só acessa-lo. Durante a sessão é recomendado o uso de fones de ouvido, além de que esteja em um local reservado e com internet estável, visando a qualidade do atendimento. ",
+      description2: "No atendimento presencial: basta estar presente e comprometido com o seu processo.",
       benefits: ["Desenvolvimento pessoal", "Autoestima", "Realização pessoal"]
-    },
-    {
-      title: "Mindfulness e Natureza",
-      description: "Integração de técnicas de atenção plena com elementos da natureza.",
-      benefits: ["Redução do stress", "Conexão interior", "Bem-estar integral"]
     }
   ];
 
@@ -51,7 +47,7 @@ export const MethodologySection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {methodologies.map((method, index) => (
             <Card key={index} className="border-0 shadow-soft bg-card hover:shadow-nature transition-all duration-300 h-full">
               <CardHeader>
@@ -63,6 +59,9 @@ export const MethodologySection = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {method.description}
                 </p>
+                {
+                  method.description2 && <p className="text-muted-foreground mb-6 leading-relaxed">{method.description2}</p>
+                }
                 <div className="space-y-3">
                   {method.benefits.map((benefit, benefitIndex) => (
                     <div key={benefitIndex} className="flex items-center">
