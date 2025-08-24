@@ -1,6 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Heart, Compass, Shield } from "lucide-react";
 import logo from "@/assets/logo.png";
+import foto1 from "@/assets/foto1.jpeg";
+import foto2 from "@/assets/foto2.jpeg";
+import foto3 from "@/assets/foto3.jpeg";
+import foto6 from "@/assets/foto6.jpeg";
 
 export const AboutSection = () => {
   return (
@@ -79,22 +83,18 @@ export const AboutSection = () => {
                meu propósito é acolher, compreender e transformar.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="bg-sage-green/20 p-6 rounded-xl text-center">
-                <div className="text-2xl font-bold text-primary mb-2">15</div>
-                <div className="text-sm text-muted-foreground">Países visitados</div>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-sage-green/20 p-2 rounded-xl text-center" style={{height: 'fit-content'}}>
+                <img className="rounded-xl" src={foto1} />
               </div>
-              <div className="bg-sky-blue/30 p-6 rounded-xl text-center">
-                <div className="text-2xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-muted-foreground">Trilhas percorridas</div>
+              <div className="bg-sky-blue/30 p-2 rounded-xl text-center" style={{height: 'fit-content'}}>
+                 <img className="rounded-xl" src={foto2} />
               </div>
-              <div className="bg-accent/30 p-6 rounded-xl text-center">
-                <div className="text-2xl font-bold text-primary mb-2">8</div>
-                <div className="text-sm text-muted-foreground">Especializações</div>
+              <div className="bg-accent/30 p-2 rounded-xl text-center" style={{height: 'fit-content'}}>
+                 <img className="rounded-xl" src={foto3} />
               </div>
-              <div className="bg-warm-cream p-6 rounded-xl text-center">
-                <div className="text-2xl font-bold text-primary mb-2">24h</div>
-                <div className="text-sm text-muted-foreground">Disponibilidade</div>
+              <div className="bg-accent/30 p-2 rounded-xl text-center" style={{height: 'fit-content'}}>
+                <img className="rounded-xl" src={foto6} />
               </div>
             </div>
           </div>

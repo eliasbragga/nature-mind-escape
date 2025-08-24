@@ -73,6 +73,59 @@ export const TestimonialsSection = () => {
               </CardContent>
             </Card>
           ))}
+        <Card className="col-span-1 lg:col-span-3 border-0 shadow-xl bg-gradient-to-br from-primary/10 via-card/80 to-card/90 backdrop-blur-md transition-all duration-300 h-full">
+          <CardContent className="p-8">
+            <div className="flex items-center mb-6">
+              <Quote className="h-10 w-10 text-primary/40 mr-3" />
+            </div>
+
+            <h3 className="text-xl font-semibold text-primary mb-4">
+              Depoimento em destaque
+            </h3>
+
+            <p className="text-muted-foreground leading-relaxed mb-8 italic">
+              Olá, me chamo Karolayne e gostaria de compartilhar um pouco da minha
+              experiência com a terapia. Procurei ajuda em um momento difícil, quando
+              não estava bem emocionalmente. No começo, confesso que fiquei muito
+              nervosa, sem saber como seria esse processo, mas logo percebi que a
+              terapia não é algo ruim e, muito menos, 'coisa de pessoas doidas', como
+              infelizmente muitos ainda acreditam.
+              <br />
+              <br />
+              A terapia tem o poder de transformar vidas. Ela nos ajuda a enxergar
+              nossos desafios de outra forma, a encontrar caminhos e a desenvolver
+              forças que, muitas vezes, nem sabíamos que tínhamos. Não me arrependo
+              nem por um instante de ter buscado ajuda; foi, sem dúvida, a melhor
+              decisão que já tomei para mim mesma.
+              <br />
+              <br />
+              A psicóloga Arieli tem um papel fundamental nessa transformação. Ela é
+              uma profissional incrível, atenciosa e dedicada, sempre disposta a
+              ajudar, inclusive fora das sessões. O atendimento dela é cheio de
+              respeito, acolhimento e, principalmente, ausência de julgamentos, o que
+              me faz sentir totalmente segura e confiante. Com ela, as sessões são
+              leves, muitas vezes repletas de sorrisos, mas também de reflexões
+              profundas que me ajudaram a lidar melhor com meus problemas e a crescer
+              como pessoa.
+              <br />
+              <br />
+              Por isso, só tenho uma coisa a dizer: procurem ajuda! Não tenham medo de
+              cuidar da saúde emocional. E, se tiverem a oportunidade, recomendo de
+              coração a psicóloga Arieli. Essa decisão pode mudar a sua vida assim
+              como mudou a minha.
+            </p>
+
+            <div className="border-t border-border/50 pt-4 flex justify-between items-center">
+              <span className="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full">
+                Psicoterapia
+              </span>
+              <span className="text-sm font-medium text-muted-foreground">
+                — Karolayne
+              </span>
+            </div>
+          </CardContent>
+        </Card>
+
         </div>
 
         <div className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 text-center" >
