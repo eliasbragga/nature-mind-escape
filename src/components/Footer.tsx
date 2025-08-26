@@ -1,4 +1,4 @@
-import { Heart, Leaf, Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { Heart, Leaf, Mail, Send, MapPin, Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -12,7 +12,7 @@ export const Footer = () => {
                 <Leaf className="h-6 w-6 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="font-serif text-xl font-semibold">Dra. Arieli Muniz</h3>
+                <h3 className="font-serif text-xl font-semibold"> Arieli Diniz</h3>
                 <p className="text-sm text-background/80">Psicóloga Clínica</p>
               </div>
             </div>
@@ -49,8 +49,8 @@ export const Footer = () => {
             <h4 className="font-semibold text-lg">Contato</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-primary" />
-                <span className="text-background/80">(85) 98569-4442</span>
+                <Send className="h-4 w-4 text-primary" />
+                <span className="text-background/80">(85) 99139-9670</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
@@ -76,7 +76,7 @@ export const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-background/80 text-sm">
-              © 2024 Dra. Arieli Muniz - Psicóloga Clínica. Todos os direitos reservados.
+              © 2024 Arieli Diniz - Psicóloga Clínica. Todos os direitos reservados.
             </div>
             <div className="flex items-center space-x-2 text-background/80 text-sm">
               <span>Feito com</span>

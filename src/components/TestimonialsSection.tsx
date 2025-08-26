@@ -27,7 +27,7 @@ export const TestimonialsSection = () => {
     {
       name: "Lucia Fernandes",
       age: "38 anos",
-      text: "As sessões online foram perfeitas para minha rotina. A Dra. Arieli consegue criar um ambiente acolhedor mesmo à distância.",
+      text: "As sessões online foram perfeitas para minha rotina. A Arieli consegue criar um ambiente acolhedor mesmo à distância.",
       rating: 5,
       issue: "Autoestima"
     },
@@ -133,10 +133,6 @@ export const TestimonialsSection = () => {
             <div>
               <div className="text-3xl font-bold text-primary mb-2">500+</div>
               <div className="text-sm text-muted-foreground">Pessoas atendidas</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">4.9/5</div>
-              <div className="text-sm text-muted-foreground">Avaliação média</div>
             </div>
           </div>
         </div>

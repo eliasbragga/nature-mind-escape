@@ -24,7 +24,7 @@ export const Header = () => {
               </div>
             <div>
               <h1 className="font-serif text-xl font-semibold text-foreground">
-                Dra. Arieli Diniz Ferreira
+               Arieli Diniz Ferreira
               </h1>
               <p className="text-sm text-muted-foreground">Psicóloga Clínica</p>
             </div>

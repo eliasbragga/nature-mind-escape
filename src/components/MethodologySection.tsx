@@ -6,12 +6,12 @@ export const MethodologySection = () => {
     {
       title: "Abordagem",
       description: "A abordagem terapêutica é a linha teórica que o profissional segue em sua prática clínica. Aterapia psicanalítica é uma abordagem que tem como objetivo compreender o ser humano a partir da investigação de seus processos inconscientes.",
-      benefits: ["Resultados práticos", "Técnicas validadas", "Foco no presente"]
+      benefits: ["Escuta especializada", "Associação livre", "Investigação do inconsciente"]
     },
     {
       title: "A Terapia",
-      description: " Na terapia online o atendimento é feito através da plataforma google meet, por meio de vídeochamada. você receberá um link seu, nossa sessão, é só acessa-lo. Durante a sessão é recomendado o uso de fones de ouvido, além de que esteja em um local reservado e com internet estável, visando a qualidade do atendimento. ",
-      description2: "No atendimento presencial: basta estar presente e comprometido com o seu processo.",
+      description: " Atendimento Online: As sessões online acontecem pela plataforma Google Meet, através de vídeochamada. No horário agendado, você receberá um link exclusivo para acessar a sessão.Para uma melhor experiência, é recomendado o uso de fones de ouvido, estar em um ambiente reservado e contar com uma conexão de internet estável.",
+      description2: "Atendimento Presencial: No atendimento presencial, basta comparecer ao consultório com disponibilidade e abertura para o processo terapêutico.",
       benefits: ["Desenvolvimento pessoal", "Autoestima", "Realização pessoal"]
     }
   ];
@@ -42,8 +42,7 @@ export const MethodologySection = () => {
             Metodologia e Serviços
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Combino diferentes abordagens terapêuticas para criar um tratamento personalizado 
-            que atenda às suas necessidades únicas de crescimento e bem-estar.
+           Meu trabalho é voltado para oferecer um espaço de escuta e acolhimento, ajudando você a compreender melhor seus sentimentos, sua história e seus desafios, para que possa viver de forma mais leve e consciente
           </p>
         </div>
 
