@@ -1,7 +1,44 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, Flower2 } from "lucide-react";
+import { useState } from "react";
 
 export const TestimonialsSection = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleArticle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+  const articles = [
+    {
+      title: "O que esperar da terapia – Entenda como funciona o processo terapêutico e seus possíveis benefícios.",
+      content: (
+        <>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            A terapia é um espaço de escuta e acolhimento, onde você pode falar livremente sobre suas experiências, sentimentos e conflitos. Ao longo do processo, é possível desenvolver maior autoconhecimento, compreender padrões de comportamento e encontrar novas formas de lidar com os desafios da vida. A cada encontro, abre-se a oportunidade de elaborar questões internas e construir caminhos mais conscientes e saudáveis.
+          </p>
+          <h4 className="font-semibold text-primary mb-2">A importância da escuta na Psicanálise</h4>
+          <p className="text-muted-foreground leading-relaxed">
+            Na Psicanálise, a escuta ocupa um lugar central. O processo terapêutico se constrói a partir da possibilidade de o paciente falar livremente sobre suas vivências, enquanto o analista escuta de forma atenta, acolhedora e sem julgamentos. Essa escuta diferenciada permite que conteúdos inconscientes venham à tona, possibilitando a elaboração de sentimentos e conflitos que, muitas vezes, não encontram espaço no cotidiano. Ao se sentir ouvido, o paciente pode entrar em contato com suas próprias emoções de maneira mais profunda, ressignificando experiências e ampliando sua compreensão de si mesmo.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: "Autoconhecimento e transformação pessoal – De que forma olhar para a própria história pode abrir novos caminhos.",
+      content: (
+        <>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            O processo de autoconhecimento envolve revisitar a própria história e reconhecer como experiências passadas influenciam sentimentos, escolhas e formas de se relacionar. Ao falar sobre si em um espaço terapêutico, torna-se possível perceber padrões de repetição, compreender dores antigas e dar novos significados a situações que antes pareciam sem saída.
+          </p>
+          <h4 className="font-semibold text-primary mb-2">Relações e conflitos</h4>
+          <p className="text-muted-foreground leading-relaxed">
+            Nas relações afetivas, familiares ou de trabalho, muitas vezes repetimos situações de conflito sem perceber. A psicoterapia oferece um espaço seguro para reconhecer essas repetições e compreender de onde elas vêm. Ao trazer à consciência sentimentos e dinâmicas ocultas, a pessoa ganha mais clareza sobre suas escolhas e pode construir formas mais saudáveis de se relacionar. Dessa forma, os conflitos deixam de ser apenas fonte de sofrimento e passam a ser oportunidades de transformação e crescimento pessoal.
+          </p>
+        </>
+      ),
+    },
+  ];
+  
   const testimonials = [
     {
       name: "João Pedro",
@@ -46,7 +83,7 @@ export const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-4 lg:grid-cols-3 gap-8 mb-12">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border-0 shadow-soft bg-card/80 backdrop-blur-sm hover:shadow-nature transition-all duration-300 h-full">
               <CardContent className="p-6">
@@ -58,11 +95,9 @@ export const TestimonialsSection = () => {
                     ))}
                   </div>
                 </div>
-                
                 <p className="text-muted-foreground leading-relaxed mb-6 italic">
                   "{testimonial.text}"
                 </p>
-                
                 <div className="border-t border-border/50 pt-4">
                   <div className="flex justify-between items-start">
                     <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
@@ -73,60 +108,30 @@ export const TestimonialsSection = () => {
               </CardContent>
             </Card>
           ))}
-        <Card className="col-span-1 lg:col-span-3 border-0 shadow-xl bg-gradient-to-br from-primary/10 via-card/80 to-card/90 backdrop-blur-md transition-all duration-300 h-full">
-          <CardContent className="p-8">
-            <div className="flex items-center mb-6">
-              <Quote className="h-10 w-10 text-primary/40 mr-3" />
-            </div>
-
-            <h3 className="text-xl font-semibold text-primary mb-4">
-              Depoimento em destaque
-            </h3>
-
-            <p className="text-muted-foreground leading-relaxed mb-8 italic">
-              Olá, me chamo Karolayne e gostaria de compartilhar um pouco da minha
-              experiência com a terapia. Procurei ajuda em um momento difícil, quando
-              não estava bem emocionalmente. No começo, confesso que fiquei muito
-              nervosa, sem saber como seria esse processo, mas logo percebi que a
-              terapia não é algo ruim e, muito menos, 'coisa de pessoas doidas', como
-              infelizmente muitos ainda acreditam.
-              <br />
-              <br />
-              A terapia tem o poder de transformar vidas. Ela nos ajuda a enxergar
-              nossos desafios de outra forma, a encontrar caminhos e a desenvolver
-              forças que, muitas vezes, nem sabíamos que tínhamos. Não me arrependo
-              nem por um instante de ter buscado ajuda; foi, sem dúvida, a melhor
-              decisão que já tomei para mim mesma.
-              <br />
-              <br />
-              A psicóloga Arieli tem um papel fundamental nessa transformação. Ela é
-              uma profissional incrível, atenciosa e dedicada, sempre disposta a
-              ajudar, inclusive fora das sessões. O atendimento dela é cheio de
-              respeito, acolhimento e, principalmente, ausência de julgamentos, o que
-              me faz sentir totalmente segura e confiante. Com ela, as sessões são
-              leves, muitas vezes repletas de sorrisos, mas também de reflexões
-              profundas que me ajudaram a lidar melhor com meus problemas e a crescer
-              como pessoa.
-              <br />
-              <br />
-              Por isso, só tenho uma coisa a dizer: procurem ajuda! Não tenham medo de
-              cuidar da saúde emocional. E, se tiverem a oportunidade, recomendo de
-              coração a psicóloga Arieli. Essa decisão pode mudar a sua vida assim
-              como mudou a minha.
-            </p>
-
-            <div className="border-t border-border/50 pt-4 flex justify-between items-center">
-              <span className="text-sm bg-primary/10 text-primary px-3 py-1 rounded-full">
-                Psicoterapia
-              </span>
-              <span className="text-sm font-medium text-muted-foreground">
-                — Karolayne
-              </span>
-            </div>
-          </CardContent>
-        </Card>
 
         </div>
+         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      {articles.map((article, index) => (
+        <div
+          key={index}
+          className="col-span-1 lg:col-span-3 border-0 shadow-xl bg-gradient-to-br from-primary/10 via-card/80 to-card/90 backdrop-blur-md transition-all duration-300"
+        >
+          <div
+            className="flex items-center p-6 cursor-pointer"
+            onClick={() => toggleArticle(index)}
+          >
+            <Flower2 className="h-10 w-10 text-primary/40 mr-3" />
+            <h3 className="text-xl font-semibold text-primary">{article.title}</h3>
+          </div>
+
+          {openIndex === index && (
+            <div className="p-6 border-t border-primary/20 transition-all duration-300">
+              {article.content}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
 
         <div className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-border/50 text-center" >
           <div className="grid md:grid-cols-4 gap-8" style={{display: "flex", justifyContent: "center"}}>

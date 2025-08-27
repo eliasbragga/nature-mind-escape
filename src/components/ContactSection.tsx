@@ -139,7 +139,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2">Telefone & WhatsApp</h4>
-                    <p className="text-muted-foreground">(85) 98569-44429 -(85) 99139-9670 (wpp)</p>
+                    <p className="text-muted-foreground">(85) 991399670 (wpp)</p>
                     <p className="text-sm text-muted-foreground">Disponível de segunda a sexta</p>
                   </div>
                 </div>

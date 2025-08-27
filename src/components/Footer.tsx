@@ -50,7 +50,7 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Send className="h-4 w-4 text-primary" />
-                <span className="text-background/80">(85) 99139-9670</span>
+                <span className="text-background/80">(85) 991399670</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
