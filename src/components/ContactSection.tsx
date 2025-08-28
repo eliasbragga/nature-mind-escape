@@ -20,10 +20,10 @@ export const ContactSection = () => {
   e.preventDefault();
 
   emailjs.send(
-    "service_yr016ze",
-    "template_br5hr05",
+    "service_7h53ktj",
+    "template_0l3i6t6",
     formData,
-    "PMlztMfFiD0Acgen3"
+    "XP-yE942nAtv3sJJt"
   )
   .then(() => {
     toast.success("Mensagem enviada! Entrarei em contato em breve.");
