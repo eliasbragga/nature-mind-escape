@@ -10,15 +10,21 @@ export const TestimonialsSection = () => {
   };
   const articles = [
     {
-      title: "O que esperar da terapia – Entenda como funciona o processo terapêutico e seus possíveis benefícios.",
+      title: "O que esperar da terapia – Entenda como funciona o processo terapêutico e seus possíveis benefícios",
       content: (
         <>
           <p className="text-muted-foreground leading-relaxed mb-4">
             A terapia é um espaço de escuta e acolhimento, onde você pode falar livremente sobre suas experiências, sentimentos e conflitos. Ao longo do processo, é possível desenvolver maior autoconhecimento, compreender padrões de comportamento e encontrar novas formas de lidar com os desafios da vida. A cada encontro, abre-se a oportunidade de elaborar questões internas e construir caminhos mais conscientes e saudáveis.
           </p>
-          <h4 className="font-semibold text-primary mb-2">A importância da escuta na Psicanálise</h4>
-          <p className="text-muted-foreground leading-relaxed">
-            Na Psicanálise, a escuta ocupa um lugar central. O processo terapêutico se constrói a partir da possibilidade de o paciente falar livremente sobre suas vivências, enquanto o analista escuta de forma atenta, acolhedora e sem julgamentos. Essa escuta diferenciada permite que conteúdos inconscientes venham à tona, possibilitando a elaboração de sentimentos e conflitos que, muitas vezes, não encontram espaço no cotidiano. Ao se sentir ouvido, o paciente pode entrar em contato com suas próprias emoções de maneira mais profunda, ressignificando experiências e ampliando sua compreensão de si mesmo.
+        </>
+      ),
+    },
+    {
+      title: "A importância da escuta na Psicanálise",
+      content: (
+        <>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+          Na Psicanálise, a escuta ocupa um lugar central. O processo terapêutico se constrói a partir da possibilidade de o paciente falar livremente sobre suas vivências, enquanto o analista escuta de forma atenta, acolhedora e sem julgamentos. Essa escuta diferenciada permite que conteúdos inconscientes venham à tona, possibilitando a elaboração de sentimentos e conflitos que, muitas vezes, não encontram espaço no cotidiano. Ao se sentir ouvido, o paciente pode entrar em contato com suas próprias emoções de maneira mais profunda, ressignificando experiências e ampliando sua compreensão de si mesmo.
           </p>
         </>
       ),
@@ -33,6 +39,16 @@ export const TestimonialsSection = () => {
           <h4 className="font-semibold text-primary mb-2">Relações e conflitos</h4>
           <p className="text-muted-foreground leading-relaxed">
             Nas relações afetivas, familiares ou de trabalho, muitas vezes repetimos situações de conflito sem perceber. A psicoterapia oferece um espaço seguro para reconhecer essas repetições e compreender de onde elas vêm. Ao trazer à consciência sentimentos e dinâmicas ocultas, a pessoa ganha mais clareza sobre suas escolhas e pode construir formas mais saudáveis de se relacionar. Dessa forma, os conflitos deixam de ser apenas fonte de sofrimento e passam a ser oportunidades de transformação e crescimento pessoal.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: "Relações e conflitos",
+      content: (
+        <>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+          Nas relações afetivas, familiares ou de trabalho, muitas vezes repetimos situações de conflito sem perceber. A psicoterapia oferece um espaço seguro para reconhecer essas repetições e compreender de onde elas vêm. Ao trazer à consciência sentimentos e dinâmicas ocultas, a pessoa ganha mais clareza sobre suas escolhas e pode construir formas mais saudáveis de se relacionar. Dessa forma, os conflitos deixam de ser apenas fonte de sofrimento e passam a ser oportunidades de transformação e crescimento pessoal.
           </p>
         </>
       ),

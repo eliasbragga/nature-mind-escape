@@ -10,8 +10,8 @@ export const MethodologySection = () => {
     },
     {
       title: "A Terapia",
-      description: " Atendimento Online: As sessões online acontecem pela plataforma Google Meet, através de vídeochamada. No horário agendado, você receberá um link exclusivo para acessar a sessão.Para uma melhor experiência, é recomendado o uso de fones de ouvido, estar em um ambiente reservado e contar com uma conexão de internet estável.",
-      description2: "Atendimento Presencial: No atendimento presencial, basta comparecer ao consultório com disponibilidade e abertura para o processo terapêutico.",
+      description: " No atendimento online, as sessões acontecem por vídeo chamada, em plataforma segura (Google Meet). O paciente recebe um link no horário agendado e acessa de qualquer lugar. Para uma boa experiência, recomenda-se o uso de fones de ouvido, estar em ambiente reservado e contar com internet estável.",
+      description2: "Já no atendimento presencial, o encontro acontece diretamente no consultório. Basta comparecer no horário combinado e se permitir viver o processo com abertura e compromisso. Em ambos os formatos, o objetivo é oferecer um espaço ético, acolhedor e seguro para o cuidado psicológico.",
       benefits: ["Desenvolvimento pessoal", "Autoestima", "Realização pessoal"]
     }
   ];

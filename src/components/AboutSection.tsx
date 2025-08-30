@@ -36,7 +36,7 @@ export const AboutSection = () => {
               </div>
               <h3 className="font-semibold text-foreground mb-2">Abordagem Científica</h3>
               <p className="text-sm text-muted-foreground">
-                psicanálise, método baseado no inconsciente e na associação livre.
+                Psicanálise, método baseado no inconsciente e na associação livre.
               </p>
             </CardContent>
           </Card>
@@ -73,14 +73,10 @@ export const AboutSection = () => {
                 Minha Paixão pela Natureza e Viagens
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-               Acredito que a natureza e a cultura tem um poder transformador único. Em minhas viagens e aventuras, descobri como diferentes 
-               culturas abordam a saúde mental e os mistérios da psiquê. Indo muito além da visão ocidental acerca dos processos de saúde, doença e cura. 
-               Isso me permitiu ampliar a minha visão e a minha prática terapêutica, reconhecendo o sujeito em sua subjetividade e complexidade.
+                Acredito no poder transformador da natureza e da cultura. Em minhas viagens e experiências, descobri diferentes formas de compreender a saúde mental e os mistérios da psique, que vão muito além da visão ocidental sobre saúde, doença e cura. Essas vivências ampliaram minha prática terapêutica, permitindo reconhecer cada sujeito em sua singularidade e complexidade.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-               Minha conexão com a natureza e com a diversidade cultural me permite oferecer um atendimento mais completo, 
-               que integra ciência, sociedade, cultura, psicologia e, acima de tudo, pessoas. Com uma visão macro do mundo e micro do universo pessoal, 
-               meu propósito é acolher, compreender e transformar.
+                A natureza e a pluralidade cultural me lembram constantemente que todo ser humano é parte de algo maior. Essa consciência guia minha prática terapêutica, que busca não apenas tratar, mas transformar. Isso me permite oferecer um cuidado integral, que integra ciência, sociedade, cultura, psicologia e, acima de tudo, pessoas. Com uma visão ampla do mundo e atenta ao universo pessoal de cada indivíduo, meu propósito é acolher, compreender e transformar.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-2">
