@@ -198,8 +198,8 @@ const sendToWpp = () => {
               className="font-semibold px-8 py-3"
               onClick={() => sendToWpp()}
             >
-              <Send className="mr-2 h-5 w-5" />
-              Agendar Primeira Consulta (wpp)
+              <i className="fab fa-whatsapp"></i>
+              Agendar pelo WhatsApp
             </Button>
             <Button 
               size="lg" 
