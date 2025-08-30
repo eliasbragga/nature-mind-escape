@@ -36,10 +36,6 @@ export const TestimonialsSection = () => {
           <p className="text-muted-foreground leading-relaxed mb-4">
             O processo de autoconhecimento envolve revisitar a própria história e reconhecer como experiências passadas influenciam sentimentos, escolhas e formas de se relacionar. Ao falar sobre si em um espaço terapêutico, torna-se possível perceber padrões de repetição, compreender dores antigas e dar novos significados a situações que antes pareciam sem saída.
           </p>
-          <h4 className="font-semibold text-primary mb-2">Relações e conflitos</h4>
-          <p className="text-muted-foreground leading-relaxed">
-            Nas relações afetivas, familiares ou de trabalho, muitas vezes repetimos situações de conflito sem perceber. A psicoterapia oferece um espaço seguro para reconhecer essas repetições e compreender de onde elas vêm. Ao trazer à consciência sentimentos e dinâmicas ocultas, a pessoa ganha mais clareza sobre suas escolhas e pode construir formas mais saudáveis de se relacionar. Dessa forma, os conflitos deixam de ser apenas fonte de sofrimento e passam a ser oportunidades de transformação e crescimento pessoal.
-          </p>
         </>
       ),
     },
@@ -91,40 +87,8 @@ export const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4">
-            O Que Meus Pacientes Dizem
+            Artigos
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Histórias reais de transformação e crescimento. Cada jornada é única, 
-            mas o resultado é sempre o mesmo: uma vida mais plena e feliz.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-4 lg:grid-cols-3 gap-8 mb-12">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="border-0 shadow-soft bg-card/80 backdrop-blur-sm hover:shadow-nature transition-all duration-300 h-full">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <Quote className="h-8 w-8 text-primary/30 mr-2" />
-                  <div className="flex">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                </div>
-                <p className="text-muted-foreground leading-relaxed mb-6 italic">
-                  "{testimonial.text}"
-                </p>
-                <div className="border-t border-border/50 pt-4">
-                  <div className="flex justify-between items-start">
-                    <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
-                      {testimonial.issue}
-                    </span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-
         </div>
          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       {articles.map((article, index) => (
