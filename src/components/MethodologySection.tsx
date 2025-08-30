@@ -5,7 +5,7 @@ export const MethodologySection = () => {
   const methodologies = [
     {
       title: "Abordagem",
-      description: "A abordagem terapêutica é a linha teórica que o profissional segue em sua prática clínica. Aterapia psicanalítica é uma abordagem que tem como objetivo compreender o ser humano a partir da investigação de seus processos inconscientes.",
+      description: "A abordagem terapêutica é a linha teórica que o profissional segue em sua prática clínica. A terapia psicanalítica é uma abordagem que tem como objetivo compreender o ser humano a partir da investigação de seus processos inconscientes.",
       benefits: ["Escuta especializada", "Associação livre", "Investigação do inconsciente"]
     },
     {

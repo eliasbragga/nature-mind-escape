@@ -34,13 +34,15 @@ export const ContactSection = () => {
   });
 };
 
-  const sendToWpp = () => {
-    const numero = "85991399670";
-    const mensagem = "Olá, quero agendar uma sessão de atendimento psicológico.";
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+const sendToWpp = () => {
+  const numero = "5585991399670";
+  const mensagem = "Olá, quero agendar uma sessão de atendimento psicológico.";
 
-    window.open(url, "_blank");
-  }
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+  window.open(url, "_blank");
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -194,7 +196,7 @@ export const ContactSection = () => {
               variant="secondary" 
               size="lg" 
               className="font-semibold px-8 py-3"
-              onClick={sendToWpp}
+              onClick={() => sendToWpp()}
             >
               <Send className="mr-2 h-5 w-5" />
               Agendar Primeira Consulta (wpp)

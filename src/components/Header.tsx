@@ -9,7 +9,7 @@ export const Header = () => {
     { name: "Início", href: "#inicio" },
     { name: "Sobre", href: "#sobre" },
     { name: "Metodologia", href: "#metodologia" },
-    { name: "Depoimentos", href: "#depoimentos" },
+    { name: "Artigos", href: "#depoimentos" },
     { name: "Agendamento", href: "#agendamento" },
   ];
 
